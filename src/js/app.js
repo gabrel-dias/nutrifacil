@@ -5,22 +5,21 @@ console.log('URL do Projeto:', PROJECT_URL);
 console.log('Chave da API:', API_KEY);
 
 // Crie o cliente Supabase
-const supabase_teste = supabase.createClient(PROJECT_URL, API_KEY);
+const supabase_banco = supabase.createClient(PROJECT_URL, API_KEY);
 
 // Função assíncrona para inserir dados
 async function inserirUsuario() {
   try {
-    const { error } = await supabase_teste
+    const { error } = await supabase_banco
       .from('usuarios')
-      .insert({ id: 0, nome: 'gabriel', senha: 'ama_bruna' });
-
+      .insert({ nome: 'enzzo', senha: 'ama_bruna' });
     if (error) {
-      console.error('Erro ao inserir dados:', error.message);
+      alert('Erro ao inserir dados:', error.message);
     } else {
-      console.log('Usuário inserido com sucesso!');
+      alert('Usuário inserido com sucesso!');
     }
   } catch (err) {
-    console.error('Erro inesperado:', err);
+    alert('Erro inesperado:', err);
   }
 }
 
