@@ -7,21 +7,26 @@ console.log('Chave da API:', API_KEY);
 // Crie o cliente Supabase
 const supabase_banco = supabase.createClient(PROJECT_URL, API_KEY);
 
+// dados do formuário
+
+
 // Função assíncrona para inserir dados
 async function inserirUsuario() {
   try {
     const { error } = await supabase_banco
       .from('usuarios')
-      .insert({nome: 'vivan', senha: 'ama_muitos' });
+      .insert({ id: 1, nome: 'vivan', senha: 'ama_muitos' });
     if (error) {
-      alert('Erro ao inserir dados:', error.message);
+      console.error('Erro ao inserir dados:', error.message);
     } else {
       alert('Usuário inserido com sucesso!');
     }
   } catch (err) {
-    alert('Erro inesperado:', err);
+    console.error('Erro inesperado:', err);
   }
 }
 
-// Chame a função para inserir o usuário
+// testando função para verificar o id do usuário
+
+
 inserirUsuario();
