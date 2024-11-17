@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#formulario_cadastro {
+  width: 40%;
+}
+
+#entradas_formulario {
+  border-radius: 15px;
+  border-color: #17e317de;
+  display: flex;
+  flex-direction: column;
+}
+
