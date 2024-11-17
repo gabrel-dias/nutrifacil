@@ -12,7 +12,7 @@ async function inserirUsuario() {
   try {
     const { error } = await supabase_banco
       .from('usuarios')
-      .insert({ nome: 'enzzo', senha: 'ama_bruna' });
+      .insert({ id: 1, nome: 'enzzo', senha: 'ama_marcelo' });
     if (error) {
       alert('Erro ao inserir dados:', error.message);
     } else {
