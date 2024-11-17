@@ -3,12 +3,11 @@ import { PROJECT_URL, API_KEY } from './secrets.js';
 // Testando import do secrets.js com as credenciais do banco de dados
 alert("Banco de dados conectado com sucesso!")
 
-// Crie o cliente Supabase
+// Cria o cliente Supabase
 const banco_supabase = supabase.createClient(PROJECT_URL, API_KEY);
 
 // Captura os botões e adiciona os eventos de clique
 document.addEventListener('DOMContentLoaded', () => {
-    const formCadastro = document.getElementById('formCadastro');
     const btnCadastrar = document.getElementById('btnCadastrar');
     const btnVerificar = document.getElementById('btnVerificar');
     
@@ -20,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         await inserirUsuario(id_usuario, nome_usuario, senha_usuario);
     });
 
+    // verifica ID do usuário
     btnVerificar.addEventListener('click', async () => {
         const id_usuario = document.getElementById('id_usuario').value;
 
