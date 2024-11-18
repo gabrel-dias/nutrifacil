@@ -13,20 +13,37 @@
 </head>
 
 <body>
-    <h1>Cadastro de Usuário</h1>
-    <form id="formCadastro">
-        <label for="id_usuario">ID:</label>
-        <input type="number" id="id_usuario" name="id_usuario" min="1" required><br>
+    <header>
+        <h1>Nutrifácil</h2>
+            <p>Nutrição fácil, vida saudável </p>
+    </header>
+    <main>
+        <h2>Cadastro de Usuário</h2>
+        <form id="formCadastro">
+            <label for="nome_completo">Nome completo:</label>
+            <input type="text" id="nome_completo" name="nome_completo" required><br>
 
-        <label for="nome_usuario">Nome:</label>
-        <input type="text" id="nome_usuario" name="nome_usuario" required><br>
+            <label for="nome_usuario">Nome de usuário:</label>
+            <input type="text" id="nome_usuario" name="nome_usuario" required><br>
 
-        <label for="senha_usuario">Senha:</label>
-        <input type="password" id="senha_usuario" name="senha_usuario" required><br>
+            <label for="senha_usuario">Senha:</label>
+            <input type="password" id="senha_usuario" name="senha_usuario" required><br>
 
-        <button type="button" id="btnCadastrar">Cadastrar</button>
-        <button type="button" id="btnVerificar">Verificar ID</button>
-    </form>
+            <label for="usuario_admin">É administrador?</label>
+            <select name="usuario_admin" id="usuario_admin">
+                <option value="TRUE">Sim</option>
+                <option value="FALSE" selected>Não</option>
+            </select> <br>
+
+            <button type="submit" id="btnCadastrar">Cadastrar</button>
+        </form>
+        <span id="nome_verificacao"></span> <!-- Elemento para verificar o nome -->
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Gabriel Magalhães Dias, Enzzo Dias Nogueira</p>
+    </footer>
+
 </body>
 
 </html>
