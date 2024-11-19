@@ -14,7 +14,7 @@ document.getElementById('btnLogin').addEventListener('click', async () => {
     try {
         const { data, error } = await banco_supabase
             .from('TBUsuarios')
-            .select('ID, TIPOUSUARIO')
+            .select('ID, NOME, TIPOUSUARIO')
             .eq('EMAIL', email)
             .eq('SENHA', senha)
             .single();
@@ -22,12 +22,16 @@ document.getElementById('btnLogin').addEventListener('click', async () => {
         if (error) {
             throw error;
         }
-
+        // verifica qual o tipo de usuário (administrador ou cliente) com as credenciais que foram digitadas
         if (data) {
-            const tipoUsuario = data.TIPOUSUARIO;
-            if (tipoUsuario === 'A') {
+            const { NOME, TIPOUSUARIO } = data;
+            // armazena o nome do usuário e o seu tipo no localStorage
+            localStorage.setItem('nomeUsuario', NOME);
+            localStorage.setItem('tipoUsuario', TIPOUSUARIO);
+
+            if (TIPOUSUARIO === 'A') {
                 window.location.href = 'admin.html';
-            } else if (tipoUsuario === 'C') {
+            } else if (TIPOUSUARIO === 'C') {
                 window.location.href = 'cliente.html';
             } else {
                 alert('Tipo de usuário desconhecido.');

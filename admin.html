@@ -1,11 +1,33 @@
+<!-- pagina_admin.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrador</title>
+    <title>Página do Administrador</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tipoUsuario = localStorage.getItem('tipoUsuario');
+            const nomeUsuario = localStorage.getItem('nomeUsuario');
+            if (tipoUsuario !== 'A') {
+                alert('Acesso não autorizado.');
+                window.location.href = 'index.html'; // Redireciona para a página de login
+            } else {
+                if (nomeUsuario) {
+                    const primeiroNome = nomeUsuario.split(' ')[0]; // Obtém o primeiro nome
+                    document.getElementById('bemVindo').textContent = `Bem-vindo, ${primeiroNome}!`;
+                } else {
+                    document.getElementById('bemVindo').textContent = 'Bem-vindo, Administrador!';
+                }
+            }
+        });
+    </script>
 </head>
+
 <body>
-    <h1>Seja bem vindo, Administrador!</h1>
+    <h1 id="bemVindo">Bem-vindo, Administrador!</h1>
+    <button type="button"><a href="cadastro.html">Cadastrar novo usuario</a></button>
 </body>
+
 </html>

@@ -1,11 +1,26 @@
+<!-- pagina_cliente.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cliente</title>
+    <title>Página do Cliente</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tipoUsuario = localStorage.getItem('tipoUsuario');
+            const nomeUsuario = localStorage.getItem('nomeUsuario');
+            if (tipoUsuario !== 'C') {
+                alert('Acesso não autorizado.');
+                window.location.href = 'index.html'; // Redireciona para a página de login
+            } else {
+                const primeiroNome = nomeUsuario.split(' ')[0]; // Obtém o primeiro nome
+                document.getElementById('bemVindo').textContent = `Bem-vindo, ${primeiroNome}!`;
+            }
+        });
+    </script>
 </head>
 <body>
-    <h1>Seja bem vindo, Cliente!</h1>
+    <h1 id="bemVindo">Bem-vindo, Cliente!</h1>
+    <!-- Conteúdo da página do cliente -->
 </body>
 </html>
