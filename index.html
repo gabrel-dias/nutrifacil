@@ -7,7 +7,7 @@
     <title>Login de Usuário</title>
     <link rel="shortcut icon" href="src/assets/images/icons/favicon-32x32.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="src\js\login.js" type="module" defer></script>
+    <script src="src/js/login.js" type="module" defer></script>
 </head>
 
 <body>
@@ -18,15 +18,16 @@
     <main>
         <h2>Login de usuário</h2>
         <form id="formLogin">
-            <label for="nome_usuario">Usuário:</label>
-            <input type="text" id="nome_usuario" name="nome_usuario" required>
+            <label for="EMAIL">Email:</label>
+            <input type="text" id="EMAIL" name="EMAIL" required>
             <br>
 
-            <label for="senha_usuario">Senha:</label>
-            <input type="password" id="senha_usuario" name="senha_usuario" required>
+            <label for="SENHA">Senha:</label>
+            <input type="password" id="SENHA" name="SENHA" required>
             <br>
 
-            <button type="button" id="btnEntrar">Entrar</button>
+            <button type="button" id="btnLogin">Entrar</button>
+            <a href="">Redefinir senha</a>
         </form>
     </main>
 

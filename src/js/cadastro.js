@@ -1,6 +1,6 @@
 import { PROJECT_URL, API_KEY } from './secrets.js';
 
-// Crie o cliente Supabase
+// Cria o cliente Supabase
 const banco_supabase = supabase.createClient(PROJECT_URL, API_KEY);
 
 // Captura os campos e o formulário, e adiciona os eventos de clique e input
@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const bairro = document.getElementById('BAIRRO').value;
     const cidade = document.getElementById('CIDADE').value;
     const uf = document.getElementById('UF').value;
-
 
     await inserirUsuario(nome, cpf, email, senha, telefone, tipo_usuario, cep, logradouro, numero, bairro, cidade, uf);
   });
