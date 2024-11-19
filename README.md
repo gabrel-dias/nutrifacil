@@ -16,6 +16,9 @@ Este projeto de extensão tem como objetivo **desenvolver uma aplicação web** 
 
 Além de proporcionar uma solução prática, o projeto visa promover a integração dos alunos com o mercado de trabalho, permitindo que apliquem na prática os conceitos aprendidos na disciplina. Também busca desenvolver competências como trabalho em equipe e resolução de problemas.  
 
+O andamento do projeto pode ser acompanhado também pelo deploy das alterações no link: 
+https://gabrel-dias.github.io/nutrifacil/
+
 ---
 
 ## 🎯 **Objetivos Principais**
@@ -49,7 +52,8 @@ Além de proporcionar uma solução prática, o projeto visa promover a integra�
 - **HTML5**  
 - **CSS3**  
 - **JavaScript**  
-
+- **Supabase**
+- **Github Pages**
 ---
 
 ## 🤝 **Contribuidores**
