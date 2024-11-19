@@ -12,7 +12,7 @@ Gerhard Saboia
 ---
 
 ## 📝 **Apresentação do Projeto**
-Este projeto de extensão tem como objetivo **desenvolver uma aplicação web** utilizando **HTML, CSS, JavaScript** e **PHP** para resolver uma carência ou problema específico identificado em uma empresa parceira.  
+Este projeto de extensão tem como objetivo **desenvolver uma aplicação web** utilizando **HTML, CSS e JavaScript** para resolver uma carência ou problema específico identificado em uma empresa parceira.  
 
 Além de proporcionar uma solução prática, o projeto visa promover a integração dos alunos com o mercado de trabalho, permitindo que apliquem na prática os conceitos aprendidos na disciplina. Também busca desenvolver competências como trabalho em equipe e resolução de problemas.  
 
@@ -39,14 +39,8 @@ Além de proporcionar uma solução prática, o projeto visa promover a integra�
 
 ---
 
-## 👥 **Público-Alvo**
-- **Alunos:** Estudantes do curso de Análise e Desenvolvimento de Sistemas.  
-- **Empresas Parceiras:** Organizações interessadas em soluções web personalizadas.  
-
----
-
 ## 📦 **Produto Final**
-- Aplicação web desenvolvida com **HTML**, **CSS**, **JavaScript** e **PHP**.  
+- Aplicação web desenvolvida com **HTML**, **CSS** e **JavaScript**.  
 - Relatório detalhado sobre o processo de desenvolvimento e a interação com a empresa parceira.  
 
 ---
