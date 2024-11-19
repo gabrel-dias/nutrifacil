@@ -1,11 +1,13 @@
-<!-- pagina_cliente.html -->
+<!-- página do cliente caso o login seja validado  -->
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página do Cliente</title>
     <script>
+        // verifica qual o tipo do usuário que fez o login, e mostra a página ou não
         document.addEventListener('DOMContentLoaded', () => {
             const tipoUsuario = localStorage.getItem('tipoUsuario');
             const nomeUsuario = localStorage.getItem('nomeUsuario');
@@ -19,8 +21,19 @@
         });
     </script>
 </head>
+
 <body>
-    <h1 id="bemVindo">Bem-vindo, Cliente!</h1>
-    <!-- Conteúdo da página do cliente -->
+    <header>
+        <h1>Nutrifácil</h2>
+            <p>Nutrição fácil, vida saudável </p>
+    </header>
+    <main>
+        <h1 id="bemVindo">Bem-vindo, Cliente!</h1>
+        <!-- Conteúdo da página do cliente -->
+    </main>
+    <footer>
+        <p>Desenvolvido por Gabriel Magalhães Dias, Enzzo Dias Nogueira</p>
+    </footer>
 </body>
+
 </html>
