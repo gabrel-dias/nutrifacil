@@ -1,0 +1,110 @@
+/* Variáveis de cor para facilitar a manutenção */
+:root {
+    --primary-color: #4CAF50; /* Verde claro */
+    --secondary-color: #8BC34A; /* Verde médio */
+    --background-color: #F0F4F7; /* Azul claro */
+    --text-color: #333; /* Cor do texto */
+    --button-color: #4CAF50; /* Cor do botão */
+    --button-hover-color: #45A049; /* Cor do botão ao passar o mouse */
+    --input-border-color: #ccc; /* Cor da borda do input */
+    --header-color: #2196F3; /* Azul mais escuro */
+  }
+  
+  /* Estilo básico do corpo */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+  }
+  
+  /* Estilo dos títulos */
+  h1, h2, h3 {
+    color: var(--header-color);
+    text-align: center;
+  }
+  
+  /* Estilo do formulário */
+  form {
+    background: #fff;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo dos labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Estilo dos inputs e selects */
+  input[type="text"], input[type="date"], input[type="time"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo dos botões */
+  button {
+    background-color: var(--button-color);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover-color);
+  }
+  
+  /* Estilo das seções de informações do cliente e outros contêineres */
+  #cliente_info, .container {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+  }
+  
+  /* Estilo específico para a página de login */
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-container input[type="text"], .login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+  }
+  
+  .login-container button {
+    background-color: var(--button-color);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background-color: var(--button-hover-color);
+  }  
