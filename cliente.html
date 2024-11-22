@@ -18,7 +18,7 @@
 
       if (tipoUsuario !== 'C') {
         alert('Acesso não autorizado.');
-        window.location.href = 'index.html'; // Redireciona para a página de login
+        window.location.href = 'index.html';
       } else {
         if (!nomeUsuario) {
           console.error('Nome do usuário não encontrado no localStorage.');
@@ -27,10 +27,9 @@
           return;
         }
 
-        const primeiroNome = nomeUsuario.split(' ')[0]; // Obtém o primeiro nome
+        const primeiroNome = nomeUsuario.split(' ')[0];
         document.getElementById('bemVindo').textContent = `Bem-vindo, ${primeiroNome}!`;
 
-        // Armazenar dados do cliente no localStorage
         await armazenarDadosCliente(IDUsuario);
       }
     });
@@ -55,7 +54,7 @@
     }
   </script>
 </head>
-<body>
+<body class="cliente-page">
   <header>
     <h1>Nutrifácil</h1>
     <p>Nutrição fácil, vida saudável</p>
@@ -70,7 +69,7 @@
     </nav>
   </main>
   <footer>
-    <p>Desenvolvido por Gabriel Magalhães Dias, Enzzo Dias Nogueira</p>
+    <p>Desenvolvido por Gabriel Magalhães Dias, Enzzo Dias Nogueira, Marcelo de Sousa Pimenta</p>
   </footer>
 </body>
 </html>
